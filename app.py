@@ -19,7 +19,7 @@ def image_to_base64(img):
 # Load Data
 @st.cache_data
 def load_data():
-    return pd.read_csv(r"D:\M.Tech\pdpu\SEM 2\Cloud Computing\lab\project\plant-disease-dashboard\plant_disease_dashboard.csv")
+    return pd.read_csv(r"plant_disease_dashboard.csv")
 
 df = load_data()
 
@@ -88,12 +88,13 @@ if page == "🏠 Home":
     
     # Image paths
     images = [
-        r"D:\M.Tech\pdpu\SEM 2\Cloud Computing\lab\project\plant-disease-dashboard\sample_images\Cercospora_leaf_spot_fixed.jpg",
-        r"D:\M.Tech\pdpu\SEM 2\Cloud Computing\lab\project\plant-disease-dashboard\sample_images\healthy.jpg",
-        r"D:\M.Tech\pdpu\SEM 2\Cloud Computing\lab\project\plant-disease-dashboard\sample_images\Late_blight.jpg",
-        r"D:\M.Tech\pdpu\SEM 2\Cloud Computing\lab\project\plant-disease-dashboard\sample_images\Leaf_scorch.jpg",
-        r"D:\M.Tech\pdpu\SEM 2\Cloud Computing\lab\project\plant-disease-dashboard\sample_images\Northern_Leaf_Blight.jpg",
-        r"D:\M.Tech\pdpu\SEM 2\Cloud Computing\lab\project\plant-disease-dashboard\sample_images\Powdery_mildew.jpg"
+         "sample_images/Cercospora_leaf_spot_fixed.jpg",
+    "sample_images/healthy.jpg",
+    "sample_images/Late_blight.jpg",
+    "sample_images/Leaf_scorch.jpg",
+    "sample_images/Northern_Leaf_Blight.jpg",
+    "sample_images/Powdery_mildew.jpg"
+
     ]
 
     # Horizontal scroller with full width
